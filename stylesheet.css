@@ -13,6 +13,9 @@ body{
 
 /* NAVIGATION BAR STYLING */
 
+.mobilenavbar{
+    visibility: hidden;
+}
 
 .nav{
     z-index: 1;
@@ -55,7 +58,7 @@ body{
 .iconlinks img{
     width: 40px;
     height: 40px;
-    margin: 5px;
+    margin: 20px;
     background-color: transparent;
     opacity: 0.5;
 }
@@ -247,4 +250,179 @@ body{
     transition: all 0.5s;
     box-shadow: 5px 5px aqua;
     cursor: pointer;
+}
+
+/* ***************************************************************MOBILE MEDIA QUERY***************************************************************************************************************************************************** */
+
+
+@media screen and (max-width: 420px) {
+
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .nav{
+        display: none;
+    }
+    .mobilenavbar{
+        visibility: visible;
+    }
+
+    .mobilenavbar button{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background-color: transparent;
+        font-size: 30px;
+        color: black;
+        border: none;
+    }
+
+    .mobilenavmenu{
+        transition: all 1s;
+        z-index: 10;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        left: 100vw;
+        background-color: black;
+        visibility: hidden;
+    }
+
+    .mobilenavmenu.active{
+        transition: all 1s;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        left: 0vw;
+        background-color: black;
+        visibility: visible;
+        z-index: 10;
+    }
+
+    .mobilenavmenu button{
+        z-index: 15;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background-color: transparent;
+        font-size: 30px;
+        color: whitesmoke;
+        border: none;
+    }
+    
+    
+    .iconlinks{
+        position: fixed;
+        top: 5px;
+        left: 5px;
+    }
+    
+    .iconlinks img{
+        width: 40px;
+        height: 40px;
+        margin: 20px;
+        background-color: transparent;
+        opacity: 1;
+    }
+    
+    /* SIDE SCROLLING LOGO STYLING */
+    
+    
+    .logo{
+        z-index: 1;
+        transition: all 0.5s;
+        position: fixed;
+        left: 12.5px;
+        top: 12.5px;
+        font-size: 25px;
+        user-select: none;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+    }
+    
+    /* MESSAGE ME MODAL STYLING */
+    
+    
+    .messagemodal{
+        z-index: 5;
+        margin: 0px;
+        padding: 0px;
+        transition: all 1s;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: -100vh;
+        margin: 0 auto;
+        background-color: black;
+        visibility: hidden;
+    }
+
+    
+    .messagemodal h2{ 
+        font-size: 50px;
+        padding-top: 90px;
+    }
+    
+    .messagemodal p{ 
+        font-size: 17px;
+        padding: 10px;
+    }
+    
+    /* MODAL contact form styling */
+    
+    
+    .contactformdiv input{ 
+        width: 325px;
+        height: 40px;
+        margin: 7.5px;
+    }
+    
+    #message{
+        resize: none;
+        width: 100%;
+        height: 70px;
+    }
+
+    .contactformdiv button {
+        width: 100%;
+        height: 30px;
+        font-size: 17px;
+        margin-top: 1px;
+        margin: auto;
+    }
+    #numberfield{ 
+        visibility: hidden;
+    }
+    
+    ::placeholder {
+        padding: 10px;
+    }
+    
+    
+    /* Homepage information */
+    
+    .homeinfo{ 
+        z-index: 1;
+        text-align: center;
+        transform: translateY(17.5vh);
+    }
+    
+    .homeinfo h1{
+        font-size: 55px;
+    }
+    
+    .homeinfo p{
+        font-size: 30px;
+        padding: 30px;
+    }
+    
+    .homeinfo button{
+        font-size: 25px;
+    }
+
+
+    
+    
 }

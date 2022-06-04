@@ -35,3 +35,11 @@ function talkButtonHover() {
 
 }
 
+function mobilenavbar() {
+    document.getElementById('mobilenavmenu').classList.toggle('active');
+
+}
+
+function mobilenavbarhide() {
+    document.getElementById('mobilenavmenu').classList.toggle('active');
+}

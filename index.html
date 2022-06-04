@@ -21,14 +21,28 @@
 <body>
 
 <!-- Navigation markup -->
-<div class="nav">
+<nav class="nav">
     <ul>
         <li>HOME</li>
         <li>ABOUT</li>
         <li>WORK</li>
         <li onclick="messageModalOpen();">CONTACT</li>
     </ul>
-</div>
+</nav>
+
+
+<!-- Mobile navigation markup -->
+<nav class="mobilenavbar">
+
+    <button onclick="mobilenavbar();"><span id="mobilearrow">&larr;</span></button>
+    
+    <div id="mobilenavmenu" class="mobilenavmenu">
+        <button><span onclick="mobilenavbarhide();" id="mobilearrowactive">&rarr;</span></button>
+    </div>
+
+
+</nav>
+
 
 
 <!-- Top left floating logo with message modal -->
@@ -58,7 +72,7 @@
 
     <div class="iconlinks">
         <ul>
-            <li><a target="_blank" href="https://github.com/kieransavory" ><img  onclick="githubOpen();" src="github.png" alt=""></a></li>
+            <li><a target="_blank" href="https://github.com/kieransavory" ><img src="github.png" alt=""></a></li>
         </ul>
     </div>
 
