@@ -23,10 +23,10 @@
 <!-- Navigation markup -->
 <div class="nav">
     <ul>
-        <li>HOME</li>
-        <li>ABOUT</li>
-        <li>WORK</li>
-        <li onclick="messageModalOpen();">CONTACT</li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="">ABOUT</a></li>
+        <li><a href="mywork.html">WORK</a></li>
+        <li><a href="">CONTACT</a></li>
     </ul>
 </div>
 
@@ -56,25 +56,15 @@
         </form>
     </div>
 
-    <div class="iconlinks">
-        <ul>
-            <li><a target="_blank" href="https://github.com/kieransavory" ><img  onclick="githubOpen();" src="github.png" alt=""></a></li>
-        </ul>
-    </div>
-
 </div>
 
 
-<!-- Home page information -->
-<div id="homeinfo" class="homeinfo">
+
+<div class="homeinfo">
     <h1><span style="font-weight: 300;">Hello, I'm </span>Kieran Savory.</h1>
-    <p><span style="font-weight: 300;">I'm a</span> web developer.</p>
     <button id="workbutton" onmouseenter="workButtonHover();">My Work</button>
     <button id="letstalkbutton" onclick="messageModalOpen();" onmouseenter="talkButtonHover();" >Let's Talk</button>
 </div>
-
-
-
 
 
 
