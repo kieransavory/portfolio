@@ -286,7 +286,9 @@ body{
         height: 100vh;
         position: absolute;
         left: 100vw;
-        background-color: black;
+        background-color: #000000;
+        opacity: 1;
+        background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #000000 6px ), repeating-linear-gradient( #0c0c0c55, #0c0c0c );
         visibility: hidden;
     }
 
