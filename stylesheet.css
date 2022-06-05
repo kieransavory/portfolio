@@ -280,7 +280,7 @@ body{
     }
 
     .mobilenavmenu{
-        transition: all 1s;
+        transition: all 0.75s;
         z-index: 10;
         width: 100vw;
         height: 100vh;
@@ -290,8 +290,18 @@ body{
         visibility: hidden;
     }
 
+    .mobilenavbar ul li {
+        color: whitesmoke;
+        list-style-type: none;
+        font-size: 80px;
+        margin-top: 12.5vh;
+        margin-left: 10px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+    }
+
     .mobilenavmenu.active{
-        transition: all 1s;
+        transition: all 0.75s;
         width: 100vw;
         height: 100vh;
         position: absolute;
@@ -374,7 +384,8 @@ body{
     #message{
         resize: none;
         width: 100%;
-        height: 70px;
+        height: 50px;
+        margin-top: 5px;
     }
 
     .contactformdiv button {

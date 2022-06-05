@@ -45,3 +45,9 @@ function mobilenavbar() {
 function mobilenavbarhide() {
     document.getElementById('mobilenavmenu').classList.toggle('active');
 }
+
+
+function mobilenavcontact() {
+    document.getElementById('mobilenavmenu').classList.toggle('active');
+    setTimeout(messageModalOpen, 600);
+}
