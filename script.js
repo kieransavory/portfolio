@@ -1,3 +1,5 @@
+document.body.style.position = "fixed";
+
 // Hovering over the logo reveals the HTML "contact-me"
 
 function logoHover() {
