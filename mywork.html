@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" content="user-scalable=no">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="stylesheet.css">
@@ -16,19 +16,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;900&display=swap" rel="stylesheet">
 
-    <title>Kieran Savory | Web Developer</title>
+    <title>Kieran Savory | My Work</title>
 </head>
 <body>
 
 <!-- Navigation markup -->
-<div class="nav">
+<nav class="nav">
     <ul>
         <li><a href="index.html">HOME</a></li>
-        <li><a href="">ABOUT</a></li>
+        <li><a href="about.html">ABOUT</a></li>
         <li><a href="mywork.html">WORK</a></li>
-        <li><a href="">CONTACT</a></li>
+        <li onclick="messageModalOpen();">CONTACT</li>
     </ul>
-</div>
+</nav>
+
+
+<!-- Mobile navigation markup -->
+<nav class="mobilenavbar">
+
+    <button onclick="mobilenavbar();"><span id="mobilearrow">&larr;</span></button>
+    
+    <div id="mobilenavmenu" class="mobilenavmenu">
+        <button><span onclick="mobilenavbarhide();" id="mobilearrowactive">&rarr;</span></button>
+        <ul>
+            <li>About</li>
+            <li>Work</li>
+            <li onclick="mobilenavcontact();">Contact</li>
+        </ul>
+    </div>
+
+
+</nav>
+
 
 
 <!-- Top left floating logo with message modal -->
@@ -56,15 +75,24 @@
         </form>
     </div>
 
+    <div class="iconlinks">
+        <ul>
+            <li><a target="_blank" href="https://github.com/kieransavory" ><img src="github.png" alt=""></a></li>
+            <li><a target="_blank" href="mailto:kieransavory@hotmail.com" ><img src="email.png" alt=""></a></li>
+        </ul>
+    </div>
+
+</div>
+
+
+<!-- Home page information -->
+<div id="workinfo" class="homeinfo">
+    <h1 id="workinfoh1">My Work</h1>
+    <p id="workinfop"><span style="font-weight: 300;">Thanks for taking an interest in</span> my work.</p>
 </div>
 
 
 
-<div class="homeinfo">
-    <h1><span style="font-weight: 300;">Hello, I'm </span>Kieran Savory.</h1>
-    <button id="workbutton" onmouseenter="workButtonHover();">My Work</button>
-    <button id="letstalkbutton" onclick="messageModalOpen();" onmouseenter="talkButtonHover();" >Let's Talk</button>
-</div>
 
 
 

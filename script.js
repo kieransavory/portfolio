@@ -17,25 +17,6 @@ function messageModalOpen() {
     document.getElementById('messagemodal').classList.toggle('active');
 }
 
-// Hovering over homepage buttons expands text. 
-
-function workButtonHover() {
-    document.getElementById('workbutton').innerHTML = "My Work >";
-
-    document.getElementById('workbutton').addEventListener('mouseleave', () =>{
-        document.getElementById('workbutton').innerHTML = "My Work";
-    })
-}
-
-function talkButtonHover() {
-    document.getElementById('letstalkbutton').innerHTML = "Let's talk >";
-
-    document.getElementById('letstalkbutton').addEventListener('mouseleave', () =>{
-        document.getElementById('letstalkbutton').innerHTML = "Let's talk";
-    })
-
-
-}
 
 function mobilenavbar() {
     document.getElementById('mobilenavmenu').classList.toggle('active');

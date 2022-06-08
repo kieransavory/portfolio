@@ -3,8 +3,14 @@
     padding: 0px;
 }
 
+@keyframes fadeIn {
+    from{opacity: 0}
+    to{opacity: 100}
+}
+
 
 body{
+    animation: fadeIn 1s;
     background-color: whitesmoke;
     scroll-behavior: smooth;
     user-select: none;
@@ -31,7 +37,7 @@ body{
     margin: 10px;
 }
 
-.nav ul li{ 
+.nav ul li { 
     margin: 10px;
     color: black;
     font-size: 17px;
@@ -40,6 +46,12 @@ body{
     font-weight: 900;
     text-decoration: none;
 }
+
+.nav ul li a{ 
+    color: black;
+    text-decoration: none;
+}
+
 
 .nav ul li:hover{ 
     opacity: 1;
@@ -246,11 +258,42 @@ body{
     color: whitesmoke;
 }
 
+.homeinfo button a{
+   text-decoration: none;
+   color: whitesmoke;
+}
+
 .homeinfo button:hover{
     transition: all 0.5s;
+    transform: scale(1.1);
     box-shadow: 5px 5px aqua;
     cursor: pointer;
 }
+
+
+
+#workinfo{
+        z-index: 1;
+        text-align: center;
+        transform: translateY(-1vh);
+}
+
+.workinfo h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.workinfo p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    padding: 20px;
+}
+
+
+
+
 
 /* ***************************************************************MOBILE MEDIA QUERY***************************************************************************************************************************************************** */
 
@@ -426,7 +469,30 @@ body{
     .homeinfo button{
         font-size: 50px;
     }
+    
+    #workinfo{
+        width: 100%;
+        z-index: 1;
+        text-align: center;
+        transform: translateY(10vh);
+    }
 
+    #workinfoh1{
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+    }
+
+    #workinfop{
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 17px;
+    padding: 10px;
+    text-align: center;
+    }
 
     
     
