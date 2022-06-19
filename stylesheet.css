@@ -14,6 +14,7 @@ body{
     background-color: whitesmoke;
     scroll-behavior: smooth;
     user-select: none;
+    width: 100vw;
 }
 
 
