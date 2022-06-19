@@ -15,6 +15,8 @@ body{
     scroll-behavior: smooth;
     user-select: none;
     width: 100vw;
+    height: 100vh;
+    transition: all 0.5s;
 }
 
 
@@ -293,6 +295,89 @@ body{
 }
 
 
+.myworkcontainer{
+    width: 80vw;
+    margin: 40px auto;
+    height: auto;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.myworkcontainer figure{
+    width: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.myworkcontainer figure img{
+    transition: all 0.5s;
+   width: 400px;
+   height: 400px;
+   filter: grayscale(1);
+   border-radius: 400px;
+   
+}
+
+.myworkcontainer figure img:hover {
+    transition: all 0.5s;
+   cursor: pointer;
+   filter: grayscale(0);
+   border-radius: 10px;
+   
+ }
+
+ .siteinfo{ 
+    z-index: 1;
+    text-align: center;
+}
+
+.siteinfo h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.siteinfo p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    width: 50%;
+    margin: 25px auto;
+    line-height: 1.4;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.siteinfo a{
+    transition: all 0.5s;
+    font-family: 'raleway', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    background-color: black;
+    color: whitesmoke;
+    margin: 20px;
+    margin-top: 50px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.siteinfo a:hover{
+    transition: all 0.5s;
+    transform: scale(1.1);
+    box-shadow: 5px 5px aqua;
+    cursor: pointer;
+}
+
+#mobilereturn{
+    display: none;
+}
+
+
+
+
+
 
 
 
@@ -501,6 +586,54 @@ body{
     text-align: center;
     }
 
+    .siteinfo{
+        margin: 50px;
+    }
+
+    .siteinfo p{
+        width: 100vw;
+    }
+
+    .siteinfo a{
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    #mobilereturn{
+        display: flex;
+    }
+
+
+
+
+
+    .myworkcontainer{
+        width: 100vw;
+        margin: 150px auto;
+        height: auto;
+        overflow: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
     
+    .myworkcontainer figure{
+        width: auto;
+        margin: auto;
+        overflow: hidden;
+        margin: 10px;
+    }
     
+    .myworkcontainer figure img{
+        transition: all 0.5s;
+       width: 150px;
+       height: 150px;
+       filter: none;
+    }
+    
+
 }
+    

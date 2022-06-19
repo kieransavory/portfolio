@@ -32,3 +32,46 @@ function mobilenavcontact() {
     document.getElementById('mobilenavmenu').classList.toggle('active');
     setTimeout(messageModalOpen, 600);
 }
+
+
+function dbsBgHover() {
+    document.body.style.backgroundImage = "url(dbsbackground.png)";
+
+        document.getElementById('dbsIcon').addEventListener("mouseleave", () => {
+            document.body.style.backgroundImage = "none";
+        })
+}
+
+function dbsBackground() {
+    document.body.style.backgroundImage = "url(dbsbackground.png)";
+    document.body.style.color = "whitesmoke";
+
+    document.getElementById('dbsLink').addEventListener("mouseleave", () => {
+        document.body.style.backgroundImage = "none";
+        document.body.style.color = "black";
+    })
+
+
+}
+
+function dbsBackgroundTwo() {
+    document.body.style.backgroundImage = "url(dbsabouthero.jpg)";
+    document.body.style.color = "whitesmoke";
+
+    document.getElementById('dbsLinkTwo').addEventListener("mouseleave", () => {
+        document.body.style.backgroundImage = "none";
+        document.body.style.color = "black";
+    })
+
+}
+
+function casavBackground() {
+    document.body.style.backgroundImage = "url(casavbackground.png)";
+    document.body.style.color = "whitesmoke";
+
+    document.getElementById('casavLink').addEventListener("mouseleave", () => {
+        document.body.style.backgroundImage = "none";
+        document.body.style.color = "black";
+    })
+
+}
