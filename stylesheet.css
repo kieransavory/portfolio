@@ -336,7 +336,7 @@ body{
         visibility: hidden;
     }
 
-    .mobilenavbar ul li {
+    .mobilenavbar ul li{
         color: whitesmoke;
         list-style-type: none;
         font-size: 80px;
@@ -344,6 +344,12 @@ body{
         margin-left: 10px;
         font-family: 'Raleway', sans-serif;
         font-weight: 900;
+    }
+
+    .mobilenavbar ul li a{
+        color: whitesmoke;
+        list-style-type: none;
+        text-decoration: none;
     }
 
     .mobilenavmenu.active{
